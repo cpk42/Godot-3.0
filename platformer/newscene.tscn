@@ -1,0 +1,441 @@
+[gd_scene load_steps=82 format=2]
+
+[ext_resource path="res://newscene.gd" type="Script" id=1]
+[ext_resource path="res://background/island-export1.png" type="Texture" id=2]
+[ext_resource path="res://background/island-export2.png" type="Texture" id=3]
+[ext_resource path="res://background/island-export3.png" type="Texture" id=4]
+[ext_resource path="res://background/island-export4.png" type="Texture" id=5]
+[ext_resource path="res://background/island-export5.png" type="Texture" id=6]
+[ext_resource path="res://background/island-export6.png" type="Texture" id=7]
+[ext_resource path="res://background/island-export7.png" type="Texture" id=8]
+[ext_resource path="res://background/island-export8.png" type="Texture" id=9]
+[ext_resource path="res://background/island-export9.png" type="Texture" id=10]
+[ext_resource path="res://background/island-export10.png" type="Texture" id=11]
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=12]
+[ext_resource path="res://assets/magewalk/magewalk1.png" type="Texture" id=13]
+[ext_resource path="res://assets/magewalk/magewalk2.png" type="Texture" id=14]
+[ext_resource path="res://assets/magewalk/magewalk3.png" type="Texture" id=15]
+[ext_resource path="res://assets/magewalk/magewalk4.png" type="Texture" id=16]
+[ext_resource path="res://assets/magewalk/magewalk5.png" type="Texture" id=17]
+[ext_resource path="res://assets/magewalk/magewalk6.png" type="Texture" id=18]
+[ext_resource path="res://assets/magewalk/magewalk7.png" type="Texture" id=19]
+[ext_resource path="res://assets/magewalk/magewalk8.png" type="Texture" id=20]
+[ext_resource path="res://assets/magewindup/magewindup1.png" type="Texture" id=21]
+[ext_resource path="res://assets/magewindup/magewindup2.png" type="Texture" id=22]
+[ext_resource path="res://assets/magewindup/magewindup3.png" type="Texture" id=23]
+[ext_resource path="res://assets/magewindup/magewindup4.png" type="Texture" id=24]
+[ext_resource path="res://assets/magewindup/magewindup5.png" type="Texture" id=25]
+[ext_resource path="res://assets/magewindup/magewindup6.png" type="Texture" id=26]
+[ext_resource path="res://assets/magewindup/magewindup7.png" type="Texture" id=27]
+[ext_resource path="res://assets/magewindup/magewindup8.png" type="Texture" id=28]
+[ext_resource path="res://assets/magewindup/magewindup9.png" type="Texture" id=29]
+[ext_resource path="res://assets/magewindup/magewindup10.png" type="Texture" id=30]
+[ext_resource path="res://assets/magewindup/magewindup11.png" type="Texture" id=31]
+[ext_resource path="res://assets/magewindup/magewindup12.png" type="Texture" id=32]
+[ext_resource path="res://assets/magewindup/magewindup13.png" type="Texture" id=33]
+[ext_resource path="res://assets/magewindup/magewindup14.png" type="Texture" id=34]
+[ext_resource path="res://assets/mageidle/mageidle1.png" type="Texture" id=35]
+[ext_resource path="res://assets/mageidle/mageidle2.png" type="Texture" id=36]
+[ext_resource path="res://assets/mageidle/mageidle3.png" type="Texture" id=37]
+[ext_resource path="res://assets/mageidle/mageidle4.png" type="Texture" id=38]
+[ext_resource path="res://assets/mageidle/mageidle5.png" type="Texture" id=39]
+[ext_resource path="res://assets/mageidle/mageidle6.png" type="Texture" id=40]
+[ext_resource path="res://assets/mageidle/mageidle7.png" type="Texture" id=41]
+[ext_resource path="res://assets/mageidle/mageidle8.png" type="Texture" id=42]
+[ext_resource path="res://assets/mageidle/mageidle9.png" type="Texture" id=43]
+[ext_resource path="res://assets/mageidle/mageidle10.png" type="Texture" id=44]
+[ext_resource path="res://assets/mageidle/mageidle11.png" type="Texture" id=45]
+[ext_resource path="res://assets/mageidle/mageidle12.png" type="Texture" id=46]
+[ext_resource path="res://assets/mageidle/mageidle13.png" type="Texture" id=47]
+[ext_resource path="res://assets/mageidle/mageidle14.png" type="Texture" id=48]
+[ext_resource path="res://assets/mageidle/mageidle15.png" type="Texture" id=49]
+[ext_resource path="res://assets/mageidle/mageidle16.png" type="Texture" id=50]
+[ext_resource path="res://assets/mageidle/mageidle17.png" type="Texture" id=51]
+[ext_resource path="res://assets/mageidle/mageidle18.png" type="Texture" id=52]
+[ext_resource path="res://assets/mageidle/mageidle19.png" type="Texture" id=53]
+[ext_resource path="res://assets/mageidle/mageidle20.png" type="Texture" id=54]
+[ext_resource path="res://assets/mageidle/mageidle21.png" type="Texture" id=55]
+[ext_resource path="res://assets/mageidle/mageidle22.png" type="Texture" id=56]
+[ext_resource path="res://assets/mageidle/mageidle23.png" type="Texture" id=57]
+[ext_resource path="res://assets/mageidle/mageidle24.png" type="Texture" id=58]
+[ext_resource path="res://mage.gd" type="Script" id=59]
+[ext_resource path="res://assets/mage/mage1.png" type="Texture" id=60]
+[ext_resource path="res://assets/mage/mage2.png" type="Texture" id=61]
+[ext_resource path="res://assets/mage/mage3.png" type="Texture" id=62]
+[ext_resource path="res://assets/mage/mage4.png" type="Texture" id=63]
+[ext_resource path="res://assets/mage/mage5.png" type="Texture" id=64]
+[ext_resource path="res://assets/mage/mage6.png" type="Texture" id=65]
+[ext_resource path="res://assets/mage/mage7.png" type="Texture" id=66]
+[ext_resource path="res://assets/mage/mage8.png" type="Texture" id=67]
+[ext_resource path="res://assets/mage/mage9.png" type="Texture" id=68]
+[ext_resource path="res://assets/mage/mage10.png" type="Texture" id=69]
+[ext_resource path="res://assets/mage/mage11.png" type="Texture" id=70]
+[ext_resource path="res://assets/mage/mage12.png" type="Texture" id=71]
+[ext_resource path="res://assets/mage/mage13.png" type="Texture" id=72]
+[ext_resource path="res://assets/mage/mage14.png" type="Texture" id=73]
+[ext_resource path="res://assets/grassendtile.png" type="Texture" id=74]
+[ext_resource path="res://assets/grasstile.png" type="Texture" id=75]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "background",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "magewalk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ) ],
+"loop": true,
+"name": "magewindup",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ) ],
+"loop": true,
+"name": "mageidle",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 17.3649, 26.5143 )
+
+[sub_resource type="SpriteFrames" id=4]
+
+animations = [ {
+"frames": [ ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 1.27819, 10 )
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[node name="World" type="Node" index="0"]
+
+script = ExtResource( 1 )
+
+[node name="background" type="Node2D" parent="." index="0"]
+
+editor/display_folded = true
+visible = false
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="background" index="0"]
+
+position = Vector2( 512, 256 )
+scale = Vector2( 1.6, 1.5 )
+frames = SubResource( 1 )
+animation = "background"
+frame = 9
+playing = true
+
+[node name="Player" type="KinematicBody2D" parent="." index="1"]
+
+position = Vector2( 64, 416 )
+scale = Vector2( 2.04088, 2.07095 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 12 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="mage" type="AnimatedSprite" parent="Player" index="0"]
+
+frames = SubResource( 2 )
+animation = "magewalk"
+frame = 2
+flip_h = true
+script = ExtResource( 59 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" index="1"]
+
+position = Vector2( 4.93612, 0 )
+scale = Vector2( 0.757616, 1 )
+shape = SubResource( 3 )
+
+[node name="Position2D" type="Position2D" parent="Player" index="2"]
+
+position = Vector2( 15.6795, 0 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="wizard" type="StaticBody2D" parent="." index="2"]
+
+editor/display_folded = true
+position = Vector2( 896, 416 )
+scale = Vector2( 2.24358, 2.33483 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="wizard" index="0"]
+
+frames = SubResource( 4 )
+animation = "default"
+frame = 10
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wizard" index="1"]
+
+position = Vector2( -13.7428, -3.05 )
+scale = Vector2( 5.58404, 2.22692 )
+shape = SubResource( 5 )
+
+[node name="TileMap" type="TileMap" parent="." index="3"]
+
+editor/display_folded = true
+position = Vector2( 160, 384 )
+mode = 0
+tile_set = null
+cell_size = Vector2( 64, 64 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray(  )
+
+[node name="animwall13" type="StaticBody2D" parent="TileMap" index="0"]
+
+position = Vector2( -96, 160 )
+scale = Vector2( 2, 2.01104 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/animwall13" index="0"]
+
+position = Vector2( -5.72205e-06, -20.8 )
+scale = Vector2( 3.2, 1.6 )
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/animwall13" index="1"]
+
+texture = ExtResource( 74 )
+flip_h = true
+_sections_unfolded = [ "Offset" ]
+
+[node name="animwall15" type="StaticBody2D" parent="TileMap" index="1"]
+
+editor/display_folded = true
+position = Vector2( 32, 160 )
+scale = Vector2( 2, 2 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/animwall15" index="0"]
+
+position = Vector2( -5.72205e-06, -20.8 )
+scale = Vector2( 3.2, 1.6 )
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/animwall15" index="1"]
+
+texture = ExtResource( 75 )
+
+[node name="animwall18" type="StaticBody2D" parent="TileMap" index="2"]
+
+editor/display_folded = true
+position = Vector2( 416, 160 )
+scale = Vector2( 2, 2 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/animwall18" index="0"]
+
+position = Vector2( -5.72205e-06, -20.8 )
+scale = Vector2( 3.2, 1.6 )
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/animwall18" index="1"]
+
+texture = ExtResource( 75 )
+
+[node name="animwall16" type="StaticBody2D" parent="TileMap" index="3"]
+
+editor/display_folded = true
+position = Vector2( 160, 160 )
+scale = Vector2( 2, 2 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/animwall16" index="0"]
+
+position = Vector2( -5.72205e-06, -20.8 )
+scale = Vector2( 3.2, 1.6 )
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/animwall16" index="1"]
+
+texture = ExtResource( 75 )
+
+[node name="animwall20" type="StaticBody2D" parent="TileMap" index="4"]
+
+editor/display_folded = true
+position = Vector2( 544, 160 )
+scale = Vector2( 2, 2 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/animwall20" index="0"]
+
+position = Vector2( -5.72205e-06, -20.8 )
+scale = Vector2( 3.2, 1.6 )
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/animwall20" index="1"]
+
+texture = ExtResource( 75 )
+
+[node name="animwall17" type="StaticBody2D" parent="TileMap" index="5"]
+
+editor/display_folded = true
+position = Vector2( 288, 160 )
+scale = Vector2( 2, 2 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/animwall17" index="0"]
+
+position = Vector2( -5.72205e-06, -20.8 )
+scale = Vector2( 3.2, 1.6 )
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/animwall17" index="1"]
+
+texture = ExtResource( 75 )
+
+[node name="animwall19" type="StaticBody2D" parent="TileMap" index="6"]
+
+editor/display_folded = true
+position = Vector2( 672, 160 )
+scale = Vector2( 2, 2 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/animwall19" index="0"]
+
+position = Vector2( -5.72205e-06, -20.8 )
+scale = Vector2( 3.2, 1.6 )
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/animwall19" index="1"]
+
+texture = ExtResource( 75 )
+
+[node name="animwall31" type="StaticBody2D" parent="TileMap" index="7"]
+
+position = Vector2( 800, 160.353 )
+scale = Vector2( 2, 2.01104 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/animwall31" index="0"]
+
+position = Vector2( -5.72205e-06, -20.8 )
+scale = Vector2( 3.2, 1.6 )
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="TileMap/animwall31" index="1"]
+
+texture = ExtResource( 74 )
+
+
